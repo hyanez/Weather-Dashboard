@@ -6,10 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Weather Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container">
+      <aside class="aside">
+        <form id="form">
+          <h2 id="search-text">Search for a City</h2>
+          <div class="form-group">
+            <input type="text" id="cityInput" />
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </form>
+        <div class="btnList"></div>
+      </aside>
+      <main>
+        <div id="today-container">
+          <div id="todayTemp">
+            <h2 class="cityDate"></h2>
+            <div>
+              <p class="temp"><span>Temperature: </span><span></span></p>
+              <p class="wind"><span>Wind Speeds: </span><span></span></p>
+              <p class="humidity"><span>Humidity: </span><span></span></p>
+              <p class="UV"><span>UV Index: </span><span></span></p>
+            </div>
+          </div>
+        </div>
+        <div id="weekTemp">
+          <h2>5 Day Forecast</h2>
+          <div id="card-container">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="date1"></h3>
+                <img class="icon" alt="" />
+                <div>
+                  <p class="temp1"></p>
+                  <p class="wind1"></p>
+                  <p class="humidity1"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="date1"></h3>
+                <img class="icon" alt="" />
+                <div>
+                  <p class="temp1"></p>
+                  <p class="wind1"></p>
+                  <p class="humidity1"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="date1"></h3>
+                <img class="icon" alt="" />
+                <div>
+                  <p class="temp1"></p>
+                  <p class="wind1"></p>
+                  <p class="humidity1"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="date1"></h3>
+                <img class="icon" alt="" />
+                <div>
+                  <p class="temp1"></p>
+                  <p class="wind1"></p>
+                  <p class="humidity1"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="date1"></h3>
+                <img class="icon" alt="" />
+                <div>
+                  <p class="temp1"></p>
+                  <p class="wind1"></p>
+                  <p class="humidity1"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
